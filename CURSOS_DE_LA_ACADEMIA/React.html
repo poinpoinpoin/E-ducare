@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="React.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <a href="../index.html" class="logo">
+            E-ducare
+        </a>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="nav-links">
+                <a href="../ACADEMIA_GENERAL/academia_general.html">MATERIAS</a>
+                <a href="../TERMINOS_Y_CONDICIONES/terminos_y_condiciones.html">TeyCo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <p class="titulo_del_curso">
+            React
+        </p>
+
+        <img src="./Imágenes/REACT.png" alt="">
+
+        <p class="contenido">
+            React es una biblioteca de JavaScript desarrollada por Facebook que se utiliza para construir interfaces de
+            usuario interactivas y reutilizables. React utiliza un enfoque basado en componentes, lo que significa que
+            puedes crear componentes de UI independientes y componerlos para construir aplicaciones completas.
+        </p>
+
+        <p class="subtitulo">
+            Configuración del entorno de desarrollo
+        </p>
+
+        <p class="contenido">
+            Antes de comenzar a desarrollar con React, debe configurar su entorno de desarrollo. A continuación, se
+            presentan los pasos básicos para configurar un proyecto de React:
+        </p>
+
+        <ul>
+            <li>
+                Instala Node.js en tu computadora
+                <a style="color: white;" target="_blank" href="https://nodejs.org/">https://nodejs.org/.</a>
+                Node.js incluye npm, que es el administrador de paquetes que necesita para instalar las dependencias de
+                React.
+            </li>
+            <li>
+                Crea un nuevo proyecto de React utilizando Create React App (CRA). CRA es una herramienta oficial de
+                Facebook que te ayuda a configurar rápidamente un proyecto de React con todas las dependencias
+                necesarias. Para crear un nuevo proyecto de React, abre tu terminal y ejecuta el siguiente comando:
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>npx <span class="txt_amarillo">create</span>-react-app mi-aplicacion-react</pre>
+                        </code>
+                    </div>
+                </div>
+                Esto creará un nuevo directorio llamado "mi-aplicacion-react" con una estructura de proyecto básico.
+            </li>
+
+            <li>
+                Navega al directorio de tu nuevo proyecto:
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre><span class="txt_amarillo">cd</span> mi-aplicacion-react</pre>
+                        </code>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                Inicia el servidor de desarrollo
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>npm <span class="txt_azul">start</span></pre>
+                        </code>
+                    </div>
+                </div>
+                Esto iniciará el servidor de desarrollo de React y podrá ver su aplicación en el navegador visitando
+                http://localhost:3000 .
+            </li>
+        </ul>
+
+        <p class="subtitulo">
+            Componentes y JSX
+        </p>
+
+        <p class="contenido">
+            En React, los componentes son la base de la construcción de interfaces de usuario. Un componente representa
+            una parte reutilizable y modular de la interfaz de usuario. Puedes crear componentes funcionales o
+            componentes de clase en React.
+        </p>
+
+        <p class="contenido">
+            React utiliza JSX (JavaScript XML) para definir la estructura de los componentes y sus elementos. JSX te
+            permite mezclar código JavaScript con marcado HTML-like. Aquí hay un ejemplo básico de un componente
+            funcional en React:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_azul">import</span> <span class="txt_mas_rojo">React</span> <span class="txt_azul">from</span> <span class="txt_verde">'react'</span>;</pre>
+                    <br>
+                    <pre><span class="txt_azul">import</span> <span class="txt_mas_rojo">MiComponente</span>() {</pre>
+                    <pre>   <span class="txt_azul">return</span> {</pre>
+                    <pre>       &lt;div&gt;</pre>
+                    <pre>           &lt;h1&gt;Hola, mundo!&lt;/h1&gt;</pre>
+                    <pre>       &lt;/div&gt;</pre>
+                    <pre>   );</pre>
+                    <pre>}</pre>
+                    <pre><span class="txt_azul">import default</span> <span class="txt_mas_rojo">MiComponente</span>;</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="sub_subtitulo">
+            Props y State
+        </p>
+
+        <p class="contenido">
+            Los componentes pueden recibir datos a través de props y tener un estado interno llamado state.
+        </p>
+
+        <p class="contenido">
+            Las props son datos que se pasan de un componente padre a un componente hijo. Puedes usar las props para
+            personalizar y configurar un componente.
+        </p>
+
+        <p class="contenido">
+            El estado es un objeto especial que contiene datos que pueden cambiar a lo largo del tiempo y afectar la
+            representación de los componentes. Puedes usar el estado para mantener información dinámica en tu
+            aplicación.
+        </p>
+
+        <p class="contenido">
+            Aquí hay un ejemplo de cómo utilizar props y state en un componente de clase en React:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_azul">import</span> <span class="txt_mas_rojo">React</span>, { <span class="txt_mas_rojo">Component</span> } <span class="txt_azul">from</span> <span class="txt_verde">'react'</span>;</pre>
+                    <br>
+                    <pre><span class="txt_azul">class</span> <span class="txt_mas_rojo">MiComponente</span> <span class="txt_azul">extends</span> <span class="txt_mas_rojo">Component</span> {</pre>
+                    <pre>   <span class="txt_mas_rojo">constructor</span>(props) {</pre>
+                    <pre>       <span class="txt_rojo">super</span>(props);</pre>
+                    <pre>       <span class="txt_rojo">this</span>.state = {</pre>
+                    <pre>           <span class="txt_rojo">contador</span>: <span class="txt_rojo">0</span>,</pre>
+                    <pre>       };</pre>
+                    <pre>   }</pre>
+                    <br>
+                    <pre>   <span class="txt_mas_rojo">handleClick</span>() {</pre>
+                    <pre>       <span class="txt_rojo">this</span>.<span class="txt_mas_rojo">setState</span>({ <span class="txt_rojo">contador</span>: <span class="txt_rojo">this</span>.state.contador + <span class="txt_rojo">1</span> });</pre>
+                    <pre>   }</pre>
+                    <pre>   <span class="txt_mas_rojo">render</span>() {</pre>
+                    <pre>       <span class="txt_azul">return</span> (</pre>
+                    <pre>           &lt;div&gt;</pre>
+                    <pre>               &lt;h1&gt;{this.props.titulo}&lt;/h1&gt;</pre>
+                    <pre>               &lt;p&gt;Contador: {this.state.contador}&lt;/p&gt;</pre>
+                    <pre>               &lt;buttom <span class="txt_rojo">onClick</span>=<span class="txt_verde">{()</span> => this.handleClick()}&gt;Incrementar&lt;/buttom&gt;</pre>
+                    <pre>           &lt;/div&gt;</pre>
+                    <pre>       );</pre>
+                    <pre>   }</pre>
+                    <pre>}</pre>
+                    <br>
+                    <pre><span class="txt_azul">export default</span> <span class="txt_mas_rojo">MiComponente</span>;</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="sub_subtitulo">
+            Ciclo de vida de los componentes
+        </p>
+
+        <p class="contenido">
+            Los componentes de clase en React tienen un ciclo de vida que te permite ejecutar un código en momentos
+            específicos durante la existencia del componente, como cuando se monta, actualiza o desmonta.
+        </p>
+
+        <p class="contenido">
+            Algunos métodos del ciclo de vida común son:
+        </p>
+
+        <ul>
+            <li>
+                <strong>componentDidMount()</strong>:
+                se llama después de que el componente se monta en el DOM.
+            </li>
+            <li>
+                <strong>componentDidUpdate(prevProps, prevState)</strong>:
+                se llama después de que el componente se actualice.
+            </li>
+            <li>
+                <strong>componentWillUnmount()</strong>:
+                se llama justo antes de que el componente se desmonte y se elimine del DOM.
+            </li>
+        </ul>
+
+        <p class="contenido">
+            Puedes utilizar estos métodos para realizar tareas como llamar a una API, suscribirte a eventos o limpiar
+            recursos cuando el componente se desmonte.
+        </p>
+
+        <p class="contenido">
+            Estos son solo los conceptos básicos para comenzar con React. A medida que avances, puede aprender sobre
+            enrutamiento, gestión de estado avanzado (como Redux o Context API), animaciones y más.
+        </p>
+
+        <p class="contenido">
+            ¡Espero que este curso introductorio te haya sido útil para comenzar a desarrollar con React! Recuerda que
+            la práctica y la construcción de proyectos reales te ayudarán a profundizar tus conocimientos y habilidades
+            en React.
+        </p>
+    </main>
+</body>
+
+</html>

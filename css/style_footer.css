@@ -1,0 +1,55 @@
+/* FOOTER */
+footer {
+    border-top: 5px solid white;
+    padding-top: 40px;
+}
+
+.caja_logo_y_redes_sociales {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logo_footer {
+    font-size: 110px;
+    color: #07c373;
+    font-weight: 700;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.icono_redes_sociales {
+    width: 80px;
+}
+
+.copyright_terminos_soporte {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.copyright {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.terminos {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.soporte {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* FOOTER */

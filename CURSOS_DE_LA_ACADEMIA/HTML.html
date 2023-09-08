@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="HTML.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="../index.html" class="logo">
+            E-ducare
+        </a>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="nav-links">
+                <a href="../ACADEMIA_GENERAL/academia_general.html">MATERIAS</a>
+                <a href="../TERMINOS_Y_CONDICIONES/terminos_y_condiciones.html">TeyCo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <p class="titulo_del_curso">
+            HTML
+        </p>
+
+        <img src="./Imágenes/HTML.png" alt="">
+
+        <p class="contenido">
+            HTML, que significa "HyperText Markup Language" (Lenguaje de Marcado de Hipertexto), es el lenguaje estándar
+            utilizado para crear la estructura y el contenido de las páginas web. Permite definir la forma en que se
+            presentan los elementos en una página y cómo se relacionan entre sí.
+        </p>
+
+        <p class="contenido">
+            A continuación, te mostraré los elementos esenciales de HTML que necesitas conocer:
+        </p>
+
+        <p class="subtitulo">
+            Estructura basica:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre>&lt;!DOCTYPE <span class="txt_azul">html</span>&gt;</pre>
+                    <pre>&lt;html&gt;</pre>
+                    <br>
+                    <pre>&lt;head&gt;</pre>
+                    <pre>   &lt;title&gt;Título de la presentacion&lt;/title&gt;</pre>
+                    <pre>&lt;/head&gt;</pre>
+                    <br>
+                    <pre>&lt;body&gt;</pre>
+                    <pre>   Contenido de la página</pre>
+                    <pre>&lt;/body&gt;</pre>
+                    <br>
+                    <pre>&lt;/html&gt;</pre>
+                </code>
+            </div>
+        </div>
+
+        <ul>
+            <li>
+                <strong>
+                    &lt;!DOCTYPE html&gt;:
+                </strong>
+                Declaración que indica que el documento sigue el estándar HTML5.
+            </li>
+            <li>
+                <strong>
+                    &lt;html&gt;:
+                </strong>
+                Elemento raíz que envuelve todo el contenido de la página.
+            </li>
+            <li>
+                <strong>
+                    &lt;head&gt;:
+                </strong>
+                Encabezado de la página que contiene información meta y enlaces a archivos externos.
+            </li>
+            <li>
+                <strong>
+                    &lt;title&gt;:
+                </strong>
+                Define el título de la página que se muestra en la pestaña del navegador.
+            </li>
+            <li>
+                <strong>
+                    &lt;body&gt;:
+                </strong>
+                Contenedor principal del contenido visible en la página.
+            </li>
+        </ul>
+
+        <p class="subtitulo">
+            Encabezados
+        </p>
+
+        <p class="contenido">
+            Los encabezados se utilizan para definir los títulos y subtítulos de una página. Van desde "&lt;h1&gt;"
+            hasta
+            "&lt;h6&gt;", donde "&lt;h1&gt;" es el más grande y "&lt;h6&gt;" el más pequeño.
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre>&lt;h1&gt;Título principal&lt;/h1&gt;</pre>
+                    <pre>&lt;h2&gt;Subtítulo&lt;/h2&gt;</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="subtitulo">
+            Párrafos:
+        </p>
+
+        <p class="contenido">
+            Los párrafos se crean utilizando el elemento "&lt;p&gt;".
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre>&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="subtitulo">
+            Enlaces:
+        </p>
+
+        <p class="contenido">
+            Los enlaces se crean utilizando el elemento "&lt;a&gt;". El atributo "href" define la URL a la que se
+            enlaza.
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre>&lt;a <span class="txt_rojo">href</span>=<span class="txt_verde">"https://www.ejemplo.com"</span>&gt;Enlace de ejemplo&lt;/a&gt;</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="subtitulo">
+            Imágenes:
+        </p>
+
+        <p class="contenido">
+            Las imágenes se insertan utilizando el elemento "&lt;img&gt;". El atributo "src" especifica la URL de la
+            imagen.
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre>&lt;img <span class="txt_rojo">src</span>=<span class="txt_verde">"imagen.jpg"</span> <span class="txt_rojo">alt</span>=<span class="txt_verde">"Descripción de la imagen"</span>&gt;</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="subtitulo">
+            Listas:
+        </p>
+
+        <p class="contenido">
+            Puedes crear listas ordenadas "&lt;ol&gt;" o listas sin orden "&lt;ul&gt;". Los elementos de la lista se
+            definen con "&lt;li&gt;".
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre>&lt;ul&gt;</pre>
+                    <pre>   &lt;li&gt;Elemento 1&lt;/li&gt;</pre>
+                    <pre>   &lt;li&gt;Elemento 2&lt;/li&gt;</pre>
+                    <pre>&lt;/ul&gt;</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="contenido">
+            Estos son solo algunos elementos básicos de HTML. A medida que te familiarices con ellos, puedes explorar
+            elementos más avanzados como tablas, formularios, estilos CSS y mucho más.
+        </p>
+
+        <p class="contenido">
+            Recuerda que HTML define la estructura y el contenido de una página web, pero para aplicar estilos y
+            presentación visual, necesitarás utilizar CSS (Cascading Style Sheets). Juntos, HTML y CSS forman la base de
+            desarrollo web.
+        </p>
+
+        <p class="contenido">
+            ¡Espero que este curso introductorio sea útil para comenzar a aprender HTML!
+        </p>
+    </main>
+</body>
+
+</html>

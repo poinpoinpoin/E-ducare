@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="Linux.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <a href="../index.html" class="logo">
+            E-ducare
+        </a>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="nav-links">
+                <a href="../ACADEMIA_GENERAL/academia_general.html">MATERIAS</a>
+                <a href="../TERMINOS_Y_CONDICIONES/terminos_y_condiciones.html">TeyCo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <p class="titulo_del_curso">
+            Linux
+        </p>
+
+        <img src="./Imágenes/LINUX.png" alt="">
+
+        <p class="subtitulo">
+            ¿Qué es Linux?
+        </p>
+
+        <p class="contenido">
+            Linux es un sistema operativo de código abierto basado en el kernel de Linux. Fue creado por Linus Torvalds
+            en 1991 y se ha convertido en uno de los sistemas operativos más populares en el mundo de la informática.
+            Linux se utiliza en una amplia variedad de dispositivos, desde servidores y supercomputadoras hasta
+            teléfonos móviles y sistemas integrados.
+        </p>
+
+        <p class="subtitulo">
+            ¿Para qué sirve Linux?
+        </p>
+
+        <p class="contenido">
+            Linux es utilizado por diversas razones, como su estabilidad, seguridad y flexibilidad. Se utiliza en
+            servidores web, servidores de bases de datos, sistemas embebidos, sistemas de control, dispositivos móviles
+            y muchas otras aplicaciones. Además, es una opción popular entre los desarrolladores y entusiastas de la
+            tecnología debido a su naturaleza de código abierto, lo que significa que su código fuente está disponible
+            para que cualquiera lo modifique y mejore.
+        </p>
+
+        <p class="subtitulo">
+            Instalación de Linux
+        </p>
+
+        <p class="contenido">
+            La instalación de Linux puede variar dependiendo de la distribución que elija. Las distribuciones más
+            populares incluyen Ubuntu, Fedora, Debian y Linux Mint. A continuación, te daré una visión general del
+            proceso de instalación:
+        </p>
+
+        <ol>
+            <li>
+                Descarga la imagen ISO de la distribución Linux que desees desde el sitio web oficial.
+            </li>
+            <img src="./Imágenes/linux/imagen_iso.jpg" alt="imagen_iso">
+            <li>
+                Cree un medio de instalación, como un DVD o una memoria USB, utilizando una herramienta como Rufus o
+                Etcher.
+            </li>
+            <img src="./Imágenes/linux/rufus.jpg" alt="">
+            <li>
+                Arranca tu computadora desde el medio de instalacion.
+            </li>
+            <img src="./Imágenes/linux/bios.jpg" alt="">
+            <li>
+                Sigue las instrucciones en pantalla para seleccionar el idioma, la ubicación y configurar las opciones
+                de particionado del disco.
+            </li>
+            <img src="./Imágenes/linux/ubuntu.jpg" alt="">
+            <li>
+                Configura el nombre de usuario y la contraseña.
+            </li>
+            <img src="./Imágenes/linux/usuario_y_contraseña.jpg" alt="">
+            <li>
+                Espera a que finalice la instalación y reinicia tu computadora.
+            </li>
+            <img src="./Imágenes/linux/finalizacion_instalacion.jpg" alt="">
+            <li>
+                Inicia sesión con tu nombre de usuario y contraseña para acceder a tu nuevo sistema Linux.
+            </li>
+            <img src="./Imágenes/linux/inicio_sesion_ubuntu.jpg" alt="">
+        </ol>
+
+        <p class="subtitulo">
+            Comandos básicos de Linux
+        </p>
+
+        <p class="contenido">
+            Aquí tienes algunos comandos básicos y ampliamente utilizados en Linux:
+        </p>
+
+        <ol>
+            <li>
+                <!-- 1 -->
+                <strong>Comando pwd</strong>
+                <br>
+                El comando pwd significa “directorio de trabajo de impresión” y es un comando de Linux simple pero útil.
+                Este comando se usa para mostrar el nombre de su <strong>directorio actual</strong>, lo que puede ser
+                útil al navegar por
+                el sistema de archivos.
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre><span class="txt_rojo">pwd</span></pre>
+                            <pre>/home/usuario</pre>
+                        </code>
+                    </div>
+                </div>
+                Este es un ejemplo de la consola Terminal que puedes usar en el panel de control cPanel de Dongee.
+            </li>
+
+            <!-- 2 -->
+            <li>
+                <strong>Comando cd</strong>
+                <br>
+                El comando cd de Linux se usa para <strong>cambiar el directorio de trabajo</strong> actual de un
+                usuario. Se puede usar
+                para subir un nivel en el sistema de archivos, o se le puede dar un directorio como argumento para
+                cambiar el directorio de trabajo.
+                <br>
+                <br>
+                Para ir al home por defecto del usuario:
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre><span class="txt_rojo">cd</span></pre>
+                        </code>
+                    </div>
+                </div>
+                Para devolverse o salir desde la carpeta en la que estás posicionado:
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre><span class="txt_rojo">cd</span> ..</pre>
+                        </code>
+                    </div>
+                </div>
+                Para ingresar a un folder:
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre><span class="txt_rojo">cd</span> carpeta</pre>
+                        </code>
+                    </div>
+                </div>
+                Para saltar entre directorios:
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre><span class="txt_rojo">cd</span> /home/usuario/public_html</pre>
+                        </code>
+                    </div>
+                </div>
+
+            </li>
+
+            <!-- 3 -->
+            <li>
+                <strong>Comando ls</strong>
+                <br>
+                El comando ls es una utilidad de línea de comandos que
+                <strong>
+                    enumera el contenido de un
+                    directorio
+                </strong>.
+                <br>
+                Se utiliza para enumerar archivos y directorios en sistemas operativos Unix y similares a Unix, incluido
+                Linux.
+                <br>
+                El comando ls se puede utilizar con los siguientes parámetros:
+                <ul>
+                    <li>l (lista en formato largo)</li>
+                    <li>a (enumera todos los archivos, incluidos los ocultos)</li>
+                    <li>t (ordenar por hora de última modificación)</li>
+                    <li>S (ordenar por tamaño de archivo)</li>
+                </ul>
+                Muy usado debido a que complementa dos flags completos:
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>ls -la</pre>
+                        </code>
+                    </div>
+                </div>
+                Ver la lista completa de archivos dentro de carpetas
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>ls -l</pre>
+                        </code>
+                    </div>
+                </div>
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>ls -lR</pre>
+                        </code>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 4 -->
+            <li>
+                <strong>Comando cat</strong>
+                <br>
+                Cat, aunque es un comando simple en su nivel más básico, es uno de los comandos de Linux más utilizados
+                en el sistema. Significa “concatenar” y se usa para
+                <strong>
+                    mostrar lo que hay dentro de un archivo de texto
+                </strong>.
+                Solo puede usar el comando cat si conoce el nombre y la extensión del archivo que desea mostrar.
+                <br>
+                <br>
+                Lee simplemente el archivo: cat : archivo
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>cat archivo.txt</pre>
+                        </code>
+                    </div>
+                </div>
+                Crea un nuevo archivo
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>cat < archivo</pre>
+                        </code>
+                    </div>
+                </div>
+                Une dos archivos el archivo1 y archivo2 y los envía al archivo3
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>cat archivo1 archivo2 < archivo3</pre>
+                        </code>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 5 -->
+            <li>
+                <strong>Comando cp</strong>
+                <br>
+                El comando ‘cp’ es una utilidad de línea de comandos que copia archivos. Es uno de los comandos más
+                útiles del sistema Linux y puede <strong>copiar archivos o directorios a otro directorio</strong>. El
+                comando cp se puede
+                usar con los comandos ‘cp’ o ‘mv’ para mover archivos.
+                <br>
+                <br>
+                Copia la imagen dentro de la carpeta imagenes
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>cp foto.jpg public_html/imagenes/</pre>
+                        </code>
+                    </div>
+                </div>
+                Copia la imagen y si encuentra otra con el mismo nombre la reemplaza, el back slash o “\” se usa para
+                que el comando que se ejecuta, corra de manera forzada, sin preguntas. Debes tener cuidado con este
+                carácter.
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>cp foto.jpg public_html/imagenes/</pre>
+                        </code>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 6 -->
+            <li>
+                <strong>Comando mv</strong>
+                <br>
+                El comando mv es un comando de Linux que se usa para <strong>mover y renombrar archivos</strong> y
+                directorios.
+                <br>
+                <br>
+                Renombrando una imágen
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>mv foto.jpg nombrecambiado.jpg</pre>
+                        </code>
+                    </div>
+                </div>
+                Mover una imagen
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>mv foto.jpg carpeta/imagenes2/</pre>
+                        </code>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 7 -->
+            <li>
+                <strong>Comando mkdir</strong>
+                <br>
+                El comando mkdir es un comando muy importante que se usa para <strong>crear directorios y
+                    subdirectorios</strong> que son
+                una parte integral del sistema operativo Linux. Este comando solo se puede ejecutar desde la terminal y
+                no necesita ningún argumento cuando se usa. Todo lo que necesita hacer es escribir mkdir en la terminal
+                e inmediatamente se creará un directorio para usted.
+                <br>
+                <br>
+                Crea una carpeta dentro de otra llamada
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>mkdir /home/imagenes</pre>
+                        </code>
+                    </div>
+                </div>
+                Crea una carpeta dentro de otra recursivamente
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>mkdir -pv /home/imagenes/otracarpeta/otracarpeta/yotramas</pre>
+                        </code>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 8 -->
+            <li>
+                <strong>Comando rmdir</strong>
+                <br>
+                La idea detrás de este comando específico es <strong>eliminar un directorio vacío</strong> y su
+                contenido del sistema de
+                archivos. Para hacerlo, deberá ingresar lo siguiente:
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>rmdir carpeta</pre>
+                        </code>
+                    </div>
+                </div>
+
+            </li>
+
+            <!-- 9 -->
+            <li>
+                <strong>Comando rm</strong>
+                <br>
+                El comando rm se usa en sistemas Linux para eliminar archivos y directorios. El comando se puede
+                personalizar con una variedad de opciones, como el indicador -r, que elimina recursivamente los archivos
+                de un directorio determinado.
+                <br>
+                <br>
+                Borrar un archivo completamente
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>rm imagen.jpg</pre>
+                        </code>
+                    </div>
+                </div>
+                Borra la carpeta completamente con todo adentro
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>rm -r carpeta</pre>
+                        </code>
+                    </div>
+                </div>
+                Aquí se usa el flag f que es forzar, es decir adiós archivos sin preguntar nada 😲
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>rm -fr</pre>
+                        </code>
+                    </div>
+                </div>
+
+            </li>
+
+            <!-- 10 -->
+            <li>
+                <strong>Comando touch</strong>
+                <br>
+                El comando touch se usa a menudo para <strong>cambiar la marca de tiempo en un archivo</strong>. El
+                comando touch también
+                se puede utilizar para otros fines, el más usado es para crear un archivo vacío.
+                <br>
+                <br>
+                Crea un archivo vacío llamado archivo.txt. Por ejemplo podrías crear un archivo llamado index.html para
+                cuando acabas de crear tu hosting y aún no tienes el diseño listo, con esto haces más segura tu cuenta
+                ya que los rastreadores y bots no podrán ver que tienes dentro de tu carpeta de archivos.
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>touch archivo.txt</pre>
+                        </code>
+                    </div>
+                </div>
+                Toma el archivo y pone la fecha en el formato año, mes, día, hora y minuto.
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>touch -t yyyymmddhhmm archivo.txt</pre>
+                        </code>
+                    </div>
+                </div>
+
+            </li>
+
+            <!-- 11 -->
+            <li>
+                <strong>Comando grep</strong>
+                <br>
+                grep es un comando UNIX que filtra la salida de un comando desde la entrada estándar. Se utiliza para
+                encontrar patrones en un archivo o en el sistema.
+                <br>
+                <br>
+                En este ejemplo grep busca en el archivo.txt todo lo que tenga la palabra “texto”
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>grep texto archivo.txt</pre>
+                        </code>
+                    </div>
+                </div>
+                grep busca la palabra “texto” no importa si está escrita en mayúsculas o minúsculas.
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>grep -i texto archivo.txt</pre>
+                        </code>
+                    </div>
+                </div>
+                Este es uno de los usos más comunes, primero se le pasa el comando cat que lee el archivo.txt y luego
+                extrae todas las líneas que tengan el texto “textofiltro”.
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>cat archivo.txt | grep textofiltro</pre>
+                        </code>
+                    </div>
+                </div>
+                En este ejemplo usa -c para contar el número de líneas que contienen la palabra textofiltro.
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>cat archivo.txt | grep -c textofiltro</pre>
+                        </code>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 12 -->
+            <li>
+                <strong>Comando dig</strong>
+                <br>
+                El comando dig de Linux se puede usar para consultar los registros DNS del dominio ingresando el
+                siguiente comando: “dig domain.com”.
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>dig apple.com</pre>
+                        </code>
+                    </div>
+                </div>
+
+            </li>
+
+            <!-- 13 -->
+            <li>
+                <strong>Comando chmod</strong>
+                <br>
+                El comando chmod se usa para cambiar los permisos de un archivo. Los permisos están representados por
+                letras, y cada letra representa un tipo diferente de acceso.
+                <br>
+                El comando chmod se puede usar para cambiar el permiso de cualquier usuario o grupo en el archivo. El
+                permiso para todos los demás usuarios no se cambiará.
+                <br>
+                <br>
+                Aquí añadimos permisos 755 los más usados por seguridad. Establecerá el permiso para que todos los
+                usuarios lean y ejecuten, pero no escriban
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>chmod 755 archivo.jpg</pre>
+                        </code>
+                    </div>
+                </div>
+                Esto establecerá el permiso para que todos los usuarios lean, escriban y ejecuten. No recomendado.
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>chmod 777 archivo.jpg</pre>
+                        </code>
+                    </div>
+                </div>
+                Se usa -R para hacerlo de manera recursiva en todos los archivos de la carpeta public_html.
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>chmod -R 755 public_html</pre>
+                        </code>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 14 -->
+            <li>
+                <strong>Comando uname</strong>
+                <br>
+                El comando uname es una utilidad del sistema Linux que muestra información sobre el sistema, como el
+                nombre del kernel, el nombre del host, el sistema operativo, la fecha de lanzamiento y la versión.
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>uname</pre>
+                        </code>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 15 -->
+            <li>
+                <strong>Comando top</strong>
+                <br>
+                El comando superior es una aplicación de terminal que le permite ver las tareas más intensivas de la CPU
+                que se ejecutan en su sistema. Fue diseñado para ser un visor de procesos interactivo.
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>top</pre>
+                        </code>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 16 -->
+            <li>
+                <strong>Comando history</strong>
+                <br>
+                El comando de historial o history se utiliza para mostrar al usuario lo que ha hecho en el sistema.
+                Puede enumerar el contenido del directorio, iniciar programas y más.
+                <br>
+                <br>
+                lista los comandos anteriormente digitados
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>history</pre>
+                        </code>
+                    </div>
+                </div>
+                Elimina el histórico para evitar que sea usado en contra tuya 🙂
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>history -c</pre>
+                        </code>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 17 -->
+            <li>
+                <strong>Comando man</strong>
+                <br>
+                Man es una utilidad de línea de comandos que proporciona páginas de manual completas de las herramientas
+                de Unix. Se puede usar junto con otras herramientas y scripts para permitir que el usuario busque
+                información sobre comandos y datos del sistema relacionados.
+                <br>
+                <br>
+                Puedes ver todo el manual del comando wget, son textos realmente extensos y bien completos.
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>man wget</pre>
+                        </code>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 18 -->
+            <li>
+                <strong>Comando echo</strong>
+                <br>
+                Man es una utilidad de línea de comandos que proporciona páginas de manual completas de las herramientas
+                de Unix. Se puede usar junto con otras herramientas y scripts para permitir que el usuario busque
+                información sobre comandos y datos del sistema relacionados.
+                <br>
+                <br>
+                Aquí imprime la frase “Esto es un ejemplo” y la manda al archivo archivo.txt
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>echo Esto es un ejemplo</pre>
+                        </code>
+                    </div>
+                </div>
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>echo ‘Esto es un ejemplo’</pre>
+                        </code>
+                    </div>
+                </div>
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>echo ‘Esto es un ejemplo’ < archivo.txt</pre>
+                        </code>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 19 -->
+            <li>
+                <strong>Comando vi</strong>
+                <br>
+                VI es el editor de <strong>modo texto</strong> de Linux. Es tal vez uno de los comandos más potentes en
+                la cantidad de
+                opciones que logra hacer. Por ejemplo, puedes abrir un archivo de código, buscar un texto, reemplazarlo
+                o sobreescribirlo. Para muchos es ciencia espacial, pero en realidad si lo aprendes a usar estas
+                <strong>un paso más adelante</strong>
+                que otros administradores. Por el momento solo te enseñaremos a crear un
+                “hello world”
+                creando un archivo, salvando y saliendo de él.
+                <br>
+                <br>
+                Para ingresar y crear un archivo en blanco llamado archivo.txt
+                Ya adentro puedes pulsar la S para insertar
+                Escribe un “hello world”
+                Escribe :wq para salir
+                <div class="caja_ejemplo_codigo">
+                    <div class="ejemplo_codigo">
+                        <code>
+                            <pre>vi archivo.txt</pre>
+                        </code>
+                    </div>
+                </div>
+            </li>
+        </ol>
+
+        <p class="contenido">
+            Estos son solo algunos ejemplos básicos, pero Linux tiene una gran cantidad de comandos y opciones
+            adicionales que puedes explorar según tus necesidades específicas. Puede consultar la documentación de Linux
+            o buscar tutoriales más detallados para ampliar su conocimiento sobre comandos y su uso.
+        </p>
+
+        <p class="contenido">
+            Recuerda que Linux es un sistema operativo muy flexible y personalizable, por lo que hay muchas formas de
+            realizar una tarea en particular. ¡Diviértete explorando y aprendiendo!
+        </p>
+    </main>
+</body>
+
+</html>

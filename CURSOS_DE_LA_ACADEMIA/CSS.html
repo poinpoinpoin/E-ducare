@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="CSS.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="../index.html" class="logo">
+            E-ducare
+        </a>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="nav-links">
+                <a href="../ACADEMIA_GENERAL/academia_general.html">CERRAR</a>
+                <a href="../TERMINOS_Y_CONDICIONES/terminos_y_condiciones.html">TeyCo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <p class="titulo_del_curso">
+            CSS
+        </p>
+
+        <img src="./Imágenes/CSS.png" alt="">
+
+        <p class="contenido">
+            CSS (Cascading Style Sheets) es un lenguaje de estilo utilizado para describir la presentación y el diseño
+            de un documento HTML (o XML). Se utiliza para controlar el aspecto visual de los elementos en una página
+            web, como el color, la tipografía, el espacio, el diseño y otros aspectos visuales.
+        </p>
+        <p class="subtitulo">
+            Sintaxis básica de CSS:
+        </p>
+
+        <p class="contenido">
+            Una regla CSS consta de un selector, una propiedad y un valor. La sintaxis general es la siguiente:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre>selector {</pre>
+                    <pre>   propiedad: valor;</pre>
+                    <pre>}</pre>
+                </code>
+            </div>
+        </div>
+
+        <ul>
+            <li>
+                Selector: Identifica el elemento HTML al que se utilizará el estilo. Puede ser una etiqueta HTML, una
+                clase, un ID o un selector de atributo.
+            </li>
+            <li>
+                Propiedad: define qué característica del elemento se desea estilizar, como el color del texto o el
+                tamaño de la fuente.
+            </li>
+            <li>
+                Valor: Especifica el valor que se asignará a la propiedad, como "rojo" para el color del texto o "14px"
+                para el tamaño de fuente.
+            </li>
+        </ul>
+
+        <p class="subtitulo">
+            Métodos para aplicar estilos CSS:
+        </p>
+
+        <ul>
+            <li>
+                Estilos en línea: Se aplica directamente en el atributo "&lt;style&gt;" de un elemento HTML específico.
+                Por
+                ejemplo:
+            </li>
+            <div class="caja_ejemplo_codigo">
+                <div class="ejemplo_codigo">
+                    <code>
+                        <pre>&lt;h1 style="<span class="txt_verde">color</span>: blue; <span class="txt_verde">font-size</span>: <span class="txt_rojo">20px</span>;"&gt;Título&lt;/h1&gt;</pre>
+                    </code>
+                </div>
+            </div>
+
+            <li>
+                Estilos incrustados: Se define dentro de la sección "&lt;style&gt;" en la cabecera del
+                documento HTML. Los estilos se aplican a los elementos seleccionados en todo el documento. Por ejemplo:
+            </li>
+            <div class="caja_ejemplo_codigo">
+                <div class="ejemplo_codigo">
+                    <code>
+                        <pre>&lt;head&gt;</pre>
+                        <pre>   &lt;style&gt;</pre>
+                        <pre>       h1 {</pre>
+                        <pre>           <span class="txt_verde">color</span>: blue;</pre>
+                        <pre>           <span class="txt_verde">font-size</span>: <span class="txt_rojo">20px</span>;</pre>
+                        <pre>       }</pre>
+                        <pre>   &lt;/style&gt;</pre>
+                        <pre>&lt;/head&gt;</pre>
+                        <br>
+                        <pre>&lt;body&gt;</pre>
+                        <pre>   &lt;h1&gt;Título&lt;/h1&gt;</pre>
+                        <pre>&lt;/body&gt;</pre>
+                    </code>
+                </div>
+            </div>
+
+            <li>
+                Estilos externos: Se define en un archivo CSS separado y se enlazan al documento HTML utilizando la
+                etiqueta "&lt;link&gt;". El archivo CSS contiene todas las reglas de estilo para el sitio web y se
+                puede reutilizar en múltiples páginas HTML. Por ejemplo:
+            </li>
+            <div class="caja_ejemplo_codigo">
+                <div class="ejemplo_codigo">
+                    <code>
+                        <pre>&lt;head&gt;</pre>
+                        <pre>   &lt;link <span class="txt_rojo">rel</span>=<span class="txt_verde">"stylesheet"</span> <span class="txt_rojo">href</span>=<span class="txt_verde">"estilos.css"</span>&gt;</pre>
+                        <pre>&lt;/head&gt;</pre>
+                        <br>
+                        <pre>&lt;body&gt;</pre>
+                        <pre>   &lt;h1&gt;Título&lt;/h1&gt;</pre>
+                        <pre>&lt;/body&gt;</pre>
+                    </code>
+                </div>
+            </div>
+        </ul>
+
+        <p class="subtitulo">
+            Selectores y Propiedades Básicas
+        </p>
+
+        <p class="contenido">
+            En CSS, los selectores se utilizan para seleccionar elementos HTML y aplicarles estilos. Las propiedades
+            definen cómo se verán esos elementos. Veamos algunos ejemplos:
+        </p>
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_plomo">/* Selector de etiqueta */</span></pre>
+                    <pre>p {</pre>
+                    <pre>   <span class="txt_verde">color</span>: blue;</pre>
+                    <pre>}</pre>
+                    <br>
+                    <pre><span class="txt_plomo">/* Selector de clase */</span></pre>
+                    <pre><span class="txt_rojo">.mensaje </span>{</pre>
+                    <pre>   <span class="txt_verde">font-size</span>: <span class="txt_rojo">18px</span></pre>
+                    <pre>}</pre>
+                    <br>
+                    <pre><span class="txt_plomo">/* Selector de ID */</span></pre>
+                    <pre><span class="txt_mas_rojo">#titulo</span> {</pre>
+                    <pre>   <span class="txt_verde">text-align</span>: center;</pre>
+                    <pre>}</pre>
+                    <br>
+                    <pre><span class="txt_plomo">/* Selector descendiente */</span></pre>
+                    <pre><span class="txt_rojo">.contenedor</span> div {</pre>
+                    <pre>   <span class="txt_verde">background-color</span>: gray;</pre>
+                    <pre>}</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="subtitulo">
+            Modelo de Caja y Posicionamiento
+        </p>
+
+        <p class="contenido">
+            El modelo de caja de CSS define cómo se representa un elemento HTML. Puede controlar el tamaño, el margen,
+            el relleno y la posición de un elemento. Veamos algunos ejemplos:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_plomo">/* Cambiar el tamaño de la caja */</span></pre>
+                    <pre><span class="txt_rojo">.mi-elemento</span> {</pre>
+                    <pre>   <span class="txt_verde">width</span>: <span class="txt_rojo">200px</span>;</pre>
+                    <pre>   <span class="txt_verde">height</span>: <span class="txt_rojo">100px</span>;</pre>
+                    <pre>}</pre>
+                    <br>
+                    <pre><span class="txt_plomo">/* Agregar margen y relleno */</span></pre>
+                    <pre>   <span class="txt_verde">margin</span>: <span class="txt_rojo">10px</span>;</pre>
+                    <pre>   <span class="txt_verde">padding</span>: <span class="txt_rojo">20px</span>;</pre>
+                    <pre>}</pre>
+                    <br>
+                    <pre><span class="txt_plomo">/* Controlar el posicionamiento */</span></pre>
+                    <pre>   <span class="txt_verde">position</span>: relative;</pre>
+                    <pre>   <span class="txt_verde">top</span>: <span class="txt_rojo">50px</span>;</pre>
+                    <pre>   <span class="txt_verde">left</span>: <span class="txt_rojo">20px</span>;</pre>
+                    <pre>}</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="subtitulo">
+            Diseño Responsivo y Media Queries
+        </p>
+
+        <p class="contenido">
+            CSS también te permite crear diseños responsivos para diferentes dispositivos. Puedes utilizar media queries
+            para aplicar estilos específicos según el tamaño de la pantalla. Veamos un ejemplo:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_plomo">/* Estilo para pantallas pequeñas */</span></pre>
+                    <pre><span class="txt_azul">@media</span> (<span class="txt_verde">max-width</span>: <span class="txt_rojo">600px</span>) {</pre>
+                    <pre>   <span class="txt_rojo">.mi-elemento</span> {</pre>
+                    <pre>       <span class="txt_verde">font-size</span>: <span class="txt_rojo">14px</span>;</pre>
+                    <pre>   }</pre>
+                    <pre>}</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="subtitulo">
+            Animaciones y Transiciones
+        </p>
+
+        <p class="contenido">
+            Puedes crear animaciones y transiciones suaves utilizando CSS. Veamos un ejemplo basico:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_plomo">/* Animación básica */</span></pre>
+                    <pre><span class="txt_azul">@keyframes</span> mi-animation {</pre>
+                    <pre>   <span class="txt_rojo">0%</span> { <span class="txt_verde">opacity</span>: <span class="txt_rojo">0</span>; }</pre>
+                    <pre>   <span class="txt_rojo">100%</span> { <span class="txt_verde">opacity</span>: <span class="txt_rojo">1</span>; }</pre>
+                    <pre>}</pre>
+                    <br>
+                    <pre><span class="txt_rojo">.mi-elemento</span> {</pre>
+                    <pre>   <span class="txt_verde">animation</span>: mi-animation <span class="txt_rojo">2s</span> infinite;</pre>
+                    <pre>}</pre>
+                    <br>
+                    <pre><span class="txt_plomo">/* Transición al pasar el cursor */</span></pre>
+                    <pre><span class="txt_rojo">.mi-elemento</span> {</pre>
+                    <pre>   <span class="txt_verde">transition</span>: background-color <span class="txt_rojo">0.3s</span> ease;</pre>
+                    <pre>}</pre>
+                    <br>
+                    <pre><span class="txt_rojo">.mi-elemento:hover</span> {</pre>
+                    <pre>   <span class="txt_verde">background-color</span>: yellow;</pre>
+                    <pre>}</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="contenido">
+            Estas son solo algunas de las muchas características de CSS. A medida que avances, podrá explorar más
+            propiedades y técnicas para crear estilos y diseños avanzados.
+        </p>
+
+        <p class="contenido">
+            Recuerda que estos son solo ejemplos introductorios y hay mucho más por descubrir en CSS. ¡Disfruta
+            explorando y creando hermosos estilos para tus sitios web!
+        </p>
+    </main>
+
+</body>
+
+</html>

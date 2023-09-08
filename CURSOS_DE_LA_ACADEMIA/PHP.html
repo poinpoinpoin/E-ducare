@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="PHP.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <a href="../index.html" class="logo">
+            E-ducare
+        </a>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="nav-links">
+                <a href="../ACADEMIA_GENERAL/academia_general.html">MATERIAS</a>
+                <a href="../TERMINOS_Y_CONDICIONES/terminos_y_condiciones.html">TeyCo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <p class="titulo_del_curso">
+            PHP
+        </p>
+
+        <img src="./Imágenes/PHP.png" alt="">
+
+        <p class="contenido">
+            PHP (Hypertext Preprocessor) es un lenguaje de programación popularmente utilizado para el desarrollo web.
+            Es especialmente conocido por ser fácil de aprender y tener una amplia compatibilidad con diferentes
+            servidores web y sistemas operativos. A continuación, te presentaré los conceptos fundamentales de PHP para
+            que puedas comenzar a desarrollar tus propias aplicaciones web.
+        </p>
+
+        <p class="subtitulo">
+            Instalación y configuración
+        </p>
+
+        <ul>
+            <li>
+                Descarga e instala PHP en tu sistema operativo. Puedes obtener la última versión de PHP desde el sitio
+                oficial de PHP (php.net).
+            </li>
+            <li>
+                Configura tu servidor web para que pueda interpretar archivos PHP. Puedes utilizar servidores web como
+                Apache, Nginx o incluso herramientas como XAMPP o WAMP, que incluyen PHP, Apache y MySQL.
+            </li>
+        </ul>
+
+        <p class="subtitulo">
+            Sintaxis básica
+        </p>
+
+        <ul>
+            <li>
+                Los scripts de PHP se insertan dentro de etiquetas
+                '
+                <?php' y '?>' en un archivo HTML o en un archivo .php independiente.
+            </li>
+            <li>
+                Los comentarios de una sola línea se pueden hacer con '//', y los comentarios de múltiples líneas se
+                pueden hacer con '/* */'.
+            </li>
+            <li>
+                Las declaraciones de variables en PHP comienzan con el símbolo '$'. Por ejemplo, '$nombre = "Juan";'.
+            </li>
+            <li>
+                PHP es un lenguaje de tipo débil, lo que significa que no es necesario declarar claramente el tipo de
+                una variable.
+            </li>
+        </ul>
+
+        <p class="subtitulo">
+            Tipos de datos y operadores
+        </p>
+
+        <ul>
+            <li>
+                PHP admite varios tipos de datos, como cadenas de texto, números enteros, números de punto flotante,
+                booleanos, matrices, objetos, etc.
+            </li>
+            <li>
+                Puede realizar operaciones aritméticas y utilizar operadores de comparación y lógicos en PHP.
+            </li>
+            <li>
+                La concatenación de cadenas de texto se realiza utilizando el operador de concatenación ..
+            </li>
+        </ul>
+
+        <p class="subtitulo">
+            Estructuras de control
+        </p>
+
+        <ul>
+            <li>
+                PHP proporciona estructuras de control como condicionales ( if, else, elseif), bucles ( for, while,
+                do-while), y estructuras de control de flujo ( switch).
+            </li>
+            <li>
+                Estas estructuras te permiten tomar decisiones y repetir bloques de código según sea necesario.
+            </li>
+        </ul>
+
+        <p class="subtitulo">
+            Funciones
+        </p>
+
+        <ul>
+            <li>
+                Las funciones en PHP te permiten agrupar código para su reutilización.
+            </li>
+            <li>
+                Puedes definir tus funciones propias o utilizar las funciones incorporadas en PHP.
+            </li>
+            <li>
+                Las funciones pueden aceptar argumentos y devolver valores.
+            </li>
+        </ul>
+
+        <p class="subtitulo">
+            Trabajo con formulario
+        </p>
+
+        <ul>
+            <li>
+                PHP se utiliza ampliamente para procesar los datos enviados desde formularios HTML.
+            </li>
+            <li>
+                Puede acceder a los datos enviados a través de la variable global $_POSTo $_GET, dependiendo del método
+                de envío utilizado (POST o GET).
+            </li>
+        </ul>
+
+        <p class="subtitulo">
+            Trabajo con base de datos
+        </p>
+
+        <ul>
+            <li>
+                PHP es compatible con una variedad de sistemas de bases de datos, como MySQL, PostgreSQL, SQLite, etc.
+            </li>
+            <li>
+                Puede conectarte a una base de datos, realizar consultas SQL y manipular los datos utilizando las
+                funciones proporcionadas por la extensión de PHP correspondiente.
+            </li>
+        </ul>
+
+        <p class="subtitulo">
+            Ejemplos de código
+        </p>
+
+        <p class="sub_subtitulo">
+            Hola mundo en PHP:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_plomo">&lt;?php</span></pre>
+                    <pre>   <span class="txt_azul">echo</span> <span class="txt_verde">"¡Hola mundo!"</span>;</pre>
+                    <pre><span class="txt_plomo">?&gt;</span></pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="sub_subtitulo">
+            Declaracion y uso de variables:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_plomo">&lt;?php</span></pre>
+                    <pre>   <span class="txt_rojo">$nombre</span> = <span class="txt_verde">"Juan"</span>;</pre>
+                    <pre>   <span class="txt_rojo">$edad</span> = <span class="txt_rojo">25</span>;</pre>
+                    <br>
+                    <br>
+                    <pre>   <span class="txt_azul">echo</span> <span class="txt_verde">"Mi nombre es $nombre y tengo $edad años."</span>;</pre>
+                    <pre><span class="txt_plomo">?&gt;</span></pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="sub_subtitulo">
+            Estructuras de control - Condicionales:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_plomo">&lt;?php</span></pre>
+                    <pre>   <span class="txt_rojo">$edad</span>=<span class="txt_rojo">18</span>;</pre>
+                    <br>
+                    <pre>   <span class="txt_azul">if</span> (<span class="txt_rojo">$edad</span> >= <span class="txt_rojo">18</span>) {</pre>
+                    <pre>       <span class="txt_azul">echo</span> <span class="txt_verde">"Eres mayor de edad."</span>;</pre>
+                    <pre>   } <span class="txt_azul">else</span> {</pre>
+                    <pre>       <span class="txt_azul">echo</span> <span class="txt_verde">"Eres menor de edad."</span>;</pre>
+                    <pre>   }</pre>
+                    <pre><span class="txt_plomo">?&gt;</span></pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="sub_subtitulo">
+            Estructuras de control - Bucles:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_plomo">&lt;?php</span></pre>
+                    <pre>   <span class="txt_azul">for</span> (<span class="txt_rojo">$i</span> = <span class="txt_rojo">1</span>; <span class="txt_rojo">$i</span> <= <span class="txt_rojo">5</span>, <span class="txt_rojo">$i</span>++) {</pre>
+                    <pre>       <span class="txt_azul">echo</span> <span class="txt_verde">"El valor de i es: $i &lt;br&gt;"</span>;</pre>
+                    <pre>   }</pre>
+                    <pre><span class="txt_plomo">?&gt;</span></pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="sub_subtitulo">
+            Funciones en PHP
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_plomo">&lt;?php</span></pre>
+                    <pre>   <span class="txt_azul">function</span> <span class="txt_mas_rojo">sumar</span>(<span class="txt_rojo">$a</span>, <span class="txt_rojo">$b</span>) {</pre>
+                    <pre>       <span class="txt_rojo">$resultado</span> = <span class="txt_rojo">$a</span> + <span class="txt_rojo">$b</span>;</pre>
+                    <pre>       <span class="txt_azul">return</span> <span class="txt_rojo">$resultado</span>;</pre>
+                    <pre>   }</pre>
+                    <br>
+                    <pre>   <span class="txt_rojo">$num1</span> = <span class="txt_rojo">10</span>;</pre>
+                    <pre>   <span class="txt_rojo">$num2</span> = <span class="txt_rojo">5</span>;</pre>
+                    <pre>   <span class="txt_rojo">$suma</span> = <span class="txt_mas_rojo">sumar</span>(<span class="txt_rojo">$num1</span>, <span class="txt_rojo">$num2</span>);</pre>
+                    <br>
+                    <pre>   <span class="txt_azul">function</span> <span class="txt_verde">"La suma de $num1 y $num2 es: $suma"</span>;</pre>
+                    <pre><span class="txt_plomo">?&gt;</span></pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="contenido">
+            Estos ejemplos te brindan una idea básica de cómo escribir código en PHP. A medida que avances, podrás
+            explorar más conceptos avanzados y construir aplicaciones web completas. ¡Buena suerte con tu aprendizaje de
+            PHP!
+        </p>
+    </main>
+</body>
+
+</html>

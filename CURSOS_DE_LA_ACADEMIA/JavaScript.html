@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="JavaScrip.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <a href="../index.html" class="logo">
+            E-ducare
+        </a>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="nav-links">
+                <a href="../ACADEMIA_GENERAL/academia_general.html">MATERIAS</a>
+                <a href="../TERMINOS_Y_CONDICIONES/terminos_y_condiciones.html">TeyCo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <p class="titulo_del_curso">
+            JavaScript
+        </p>
+
+        <img src="./Imágenes/JAVASCRIPT.png" alt="">
+
+        <p class="contenido">
+            JavaScript es un lenguaje de programación utilizado principalmente para crear interactividad en sitios web.
+            Puede ejecutarse en el lado del cliente (navegador web) y en el lado del servidor (Node.js). Aquí hay
+            algunos conceptos clave que debes conocer:
+        </p>
+
+        <p class="subtitulo">
+            Variables:
+        </p>
+
+        <p class="contenido">
+            En JavaScript, las variables se utilizan para almacenar datos. Puedes declarar una variable usando la
+            palabra clave "var", "let" o "const". Por ejemplo:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_azul">var</span> mensaje = <span class="txt_verde">"Hola, mundo!"</span>;</pre>
+                    <pre><span class="txt_azul">let</span> numero = <span class="txt_rojo">10</span>;</pre>
+                    <pre><span class="txt_azul">const</span> <span class="txt_rojo">PI</span> = <span class="txt_rojo">3.14</span>;</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="subtitulo">
+            Tipos de datos:
+        </p>
+        <p class="contenido">
+            JavaScript es un lenguaje de tipado dinámico, lo que significa que no es necesario declarar claramente el
+            tipo de una variable. Los tipos de datos comunes incluyen cadenas de texto, números, booleanos, arreglos y
+            objetos.
+        </p>
+
+        <p class="subtitulo">
+            Operadores:
+        </p>
+        <p class="contenido">
+            JavaScript admite una variedad de operadores aritméticos (+, -, *, /), operadores de comparación (==, !=,
+            <,>), operadores lógicos (&&, ||, !) y más.
+        </p>
+
+        <p class="subtitulo">
+            Estructuras de control:
+        </p>
+        <p class="contenido">
+            Puedes controlar el flujo de ejecución en JavaScript utilizando estructuras como condicionales "if-else" y
+            bucles "for" y "while". Aquí tienes un ejemplo:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_azul">if</span> (edad >= <span class="txt_verde">18</span>) {</pre>
+                    <pre>   <span class="txt_rojo">console</span>.<span class="txt_mas_rojo">log</span>(<span class="txt_verde">"Eres mayor de edad"</span>);</pre>
+                    <pre>} <span class="txt_azul">else</span> {</pre>
+                    <pre>   <span class="txt_rojo">console</span>.<span class="txt_mas_rojo">log</span>(<span class="txt_verde">"Eres menor de edad"</span>);</pre>
+                    <pre>}</pre>
+                    <br>
+                    <br>
+                    <pre><span class="txt_azul">for</span> (<span class="txt_azul">let</span> i = <span class="txt_rojo">0</span>; i < <span class="txt_rojo">5</span>; i++) {</pre>
+                    <pre>   <span class="txt_rojo">console</span>.<span class="txt_mas_rojo">log</span>(i);</pre>
+                    <pre>}</pre>
+                    <br>
+                    <br>
+                    <pre><span class="txt_azul">let</span> i = <span class="txt_rojo">0</span>;</pre>
+                    <pre><span class="txt_azul">while</span> (i < <span class="txt_rojo">5</span>) {</pre>
+                    <pre>   <span class="txt_rojo">console</span>.<span class="txt_mas_rojo">log</span>(i);</pre>
+                    <pre>   i++</pre>
+                    <pre>}</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="subtitulo">
+            Funciones:
+        </p>
+
+        <p class="contenido">
+            Las funciones te permiten agrupar un conjunto de instrucciones y ejecutarlas cuando sea necesario. Puedes
+            definir una función de la siguiente manera:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_azul">function</span> <span class="txt_mas_rojo">saludar</span>(nombre) {</pre>
+                    <pre>   <span class="txt_rojo">console</span>.<span class="txt_mas_rojo">log</span>(<span class="txt_verde">"Hola, "</span> + nombre + <span class="txt_verde">"!"</span>);</pre>
+                    <pre>}</pre>
+                    <br>
+                    <br>
+                    <pre><span class="txt_mas_rojo">saludar</span>(<span class="txt_verde">"Juan"</span>);</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="contenido">
+            Manipulación del DOM El Document Object Model (DOM) representa la estructura de un documento HTML y
+            proporciona una interfaz para interactuar con él. En JavaScript, puedes acceder y manipular elementos HTML
+            utilizando el DOM. Aquí hay algunos ejemplos:
+        </p>
+
+        <p class="subtitulo">
+            Acceder a elementos:
+        </p>
+
+        <p class="contenido">
+            Puede seleccionar elementos por su ID, clase, etiqueta, etc. utilizando las funciones proporcionadas por el
+            DOM. Por ejemplo:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_azul">let</span> elemento = <span class="txt_rojo">document</span>.<span class="txt_mas_rojo">getElementById</span>(<span class="txt_verde">"miElemento"</span>);</pre>
+                    <pre><span class="txt_azul">let</span> elementos = <span class="txt_rojo">document</span>.<span class="txt_mas_rojo">getElementsByClassName</span>(<span class="txt_verde">"miClase"</span>);</pre>
+                    <pre><span class="txt_azul">let</span> etiquetas = <span class="txt_rojo">document</span>.<span class="txt_mas_rojo">getElementsByTagName</span>(<span class="txt_verde">"p"</span>);</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="subtitulo">
+            Manipulación de elementos:
+        </p>
+
+        <p class="contenido">
+            Puedes cambiar el contenido HTML, los estilos y otros atributos de un elemento. Aquí tienes un ejemplo:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre>elemento.innerHTML = <span class="txt_verde">"Nuevo contenido"</span>;</pre>
+                    <pre>elemento.style.color = <span class="txt_verde">"red"</span>;</pre>
+                    <pre>elemento.<span class="txt_mas_rojo">setAttribute</span>(<span class="txt_verde">"class"</span>, <span class="txt_verde">"nuevaClase"</span>);</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="subtitulo">
+            Eventos:
+        </p>
+
+        <p class="contenido">
+            JavaScript te permite responder a eventos como clics de botón, movimientos del mouse, etc. Puedes asignar
+            funciones a los eventos de los elementos. Por ejemplo:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre>elemento.<span class="txt_mas_rojo">addEventListener</span>(<span class="txt_verde">"click"</span>, <span class="txt_azul">function</span>() {</pre>
+                    <pre>   <span class="txt_rojo">console</span>.<span class="txt_mas_rojo">log</span>(<span class="txt_verde">"¡Haz hecho clic en el elemento!"</span>);</pre>
+                    <pre>});</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="contenido">
+            AJAX y solicitudes HTTP JavaScript te realiza solicitudes HTTP asíncronas permite utilizar la técnica de
+            AJAX. Esto te permite cargar datos desde un servidor y actualizar partes específicas de una página web sin
+            tener que recargarla por completo. Aquí hay un ejemplo básico:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_azul">let</span> xhttp = <span class="txt_azul">new</span> <span class="txt_mas_rojo">XMLHttpRequest</span>();</pre>
+                    <pre>xhttp.onreadystatechange = <span class="txt_azul">function</span>() {</pre>
+                    <pre>   <span class="txt_azul">if</span> (<span class="txt_rojo">this</span>.readyState === <span class="txt_rojo">4</span> && <span class="txt_rojo">this</span>.status === <span class="txt_rojo">200</span>) {</pre>
+                    <pre>     <span class="txt_rojo">console</span>.<span class="txt_mas_rojo">log</span>(<span class="txt_rojo">this</span>.responseText);</pre>
+                    <pre>   }</pre>
+                    <pre>};</pre>
+                    <pre>xhttp.<span class="txt_mas_rojo">open</span>(<span class="txt_verde">"GET"</span>, <span class="txt_verde">"https://api.example.com/data"</span>, <span class="txt_azul">true</span>);</pre>
+                    <pre>xhttp.<span class="txt_mas_rojo">send</span>();</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="contenido">
+            Este es solo un breve resumen introductorio de JavaScript. Hay muchos otros conceptos y características
+            poderosas en este lenguaje de programación. Te recomendaría continuar aprendiendo y practicando para mejorar
+            tus habilidades. Puedes consultar recursos en línea, tutoriales y realizar ejercicios para profundizar en
+            JavaScript. ¡Buena suerte!
+        </p>
+    </main>
+
+</body>
+
+</html>

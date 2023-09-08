@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="Python.css">
+</head>
+
+<body>
+    <!--HEADER-->
+    <header>
+        <a href="../index.html" class="logo">
+            E-ducare
+        </a>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="nav-links">
+                <a href="../ACADEMIA_GENERAL/academia_general.html">MATERIAS</a>
+                <a href="../TERMINOS_Y_CONDICIONES/terminos_y_condiciones.html">TeyCo</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <p class="titulo_del_curso">
+            Python
+        </p>
+
+        <img src="./Imágenes/PYTHON.png" alt="">
+
+        <p class="contenido">
+            Python es un lenguaje de programación de alto nivel, interpretado y de propósito general. Fue creado por
+            Guido van Rossum y se caracteriza por su sintaxis sencilla y legible, lo que lo convierte en un lenguaje muy
+            popular tanto para principiantes como para programadores experimentados. Python es conocido por su enfoque
+            en la legibilidad del código, lo que facilita la colaboración y el mantenimiento del software.
+        </p>
+
+        <p class="subtitulo">
+            Para configurar el entorno de desarrollo de Python, sigue estos pasos:
+        </p>
+
+        <ul>
+            <li>
+                <strong>Descarga e instala Python: </strong>
+                Visita el sitio web oficial de Python en
+                <a style="color: white;" target="_blank" href="https://www.python.org">https://www.python.org
+                </a> y descarga la versión más reciente de Python para tu sistema operativo. Sigue las instrucciones de
+                instalación específicas para tu plataforma.
+            </li>
+            <li>
+                <strong>Configura las variables de entorno (): </strong>
+                Algunas versiones de Python pueden requerirse opcionalmente que agreguen la ruta de instalación a las
+                variables de entorno de su sistema. Esto te permitirá ejecutar el intérprete de Python desde cualquier
+                ubicación en tu línea de comandos. Consulte la documentación de su sistema operativo para obtener
+                instrucciones detalladas sobre cómo configurar las variables de entorno.
+            </li>
+            <li>
+                <strong>Elige un editor de texto o un entorno de desarrollo (IDE): </strong>
+                Puedes escribir programas de Python en un editor de texto simple como Notepad o utilizar un IDE más
+                completo que ofrece funciones adicionales como resaltado de sintaxis, depuración y administración de
+                proyectos. Algunas opciones populares incluyen Visual Studio Code, PyCharm, Atom y Sublime Text. Elige
+                el que mejor se adapte a tus necesidades.
+            </li>
+        </ul>
+
+        <p class="subtitulo">
+            Variables y Operaciones Básicas
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_plomo"># Variables y operaciones básicas</span></pre>
+                    <pre>numero1 = <span class="txt_rojo">10</span></pre>
+                    <pre>numero2 = <span class="txt_rojo">5</span></pre>
+                    <br>
+                    <pre><span class="txt_plomo"># Operaciones aritméticas</span></pre>
+                    <pre>suma = numero1 + numero2</pre>
+                    <pre>resta = numero1 - numero2</pre>
+                    <pre>multiplicacion = numero1 * numero2</pre>
+                    <pre>division = numero1 / numero2</pre>
+                    <pre>resto = numero1 % numero2</pre>
+                    <pre>potencia = numero1 ** numero2</pre>
+                    <br>
+                    <pre><span class="txt_plomo"># Imprimir los resultados</span></pre>
+                    <pre><span class="txt_amarillo">print</span>(<span class="txt_verde">"Suma: "</span>, suma)</pre>
+                    <pre><span class="txt_amarillo">print</span>(<span class="txt_verde">"Resta: "</span>, resta)</pre>
+                    <pre><span class="txt_amarillo">print</span>(<span class="txt_verde">"Multiplicación: "</span>, multiplicacion)</pre>
+                    <pre><span class="txt_amarillo">print</span>(<span class="txt_verde">"División: "</span>, division)</pre>
+                    <pre><span class="txt_amarillo">print</span>(<span class="txt_verde">"Resto: "</span>, resto)</pre>
+                    <pre><span class="txt_amarillo">print</span>(<span class="txt_verde">"Potencia: "</span>, potencia)</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="subtitulo">
+            Estructuras de Control de Flujo
+        </p>
+
+        <p class="contenido">
+            Python utiliza estructuras de control de flujo para tomar decisiones o repetir acciones. Aquí tienes
+            ejemplos de algunas de las estructuras más comunes:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_plomo"># Estructura de control if-else</span></pre>
+                    <pre>numero = <span class="txt_rojo">10</span></pre>
+                    <br>
+                    <br>
+                    <pre><span class="txt_azul">if</span> numero > <span class="txt_rojo">0</span>:</pre>
+                    <pre>   <span class="txt_amarillo">print</span>(<span class="txt_verde">"El número es positivo"</span>)</pre>
+                    <pre><span class="txt_azul">elif</span> numero < <span class="txt_rojo">0</span>:</pre>
+                    <pre>   <span class="txt_amarillo">print</span>(<span class="txt_verde">"El número es negativo"</span>)</pre>
+                    <pre><span class="txt_azul">else</span>:</pre>
+                    <pre>   <span class="txt_amarillo">print</span>(<span class="txt_verde">"El número es cero"</span>)</pre>
+                    <br>
+                    <br>
+                    <pre><span class="txt_plomo"># Estructura de control while</span></pre>
+                    <pre>contador = <span class="txt_rojo">0</span>:</pre>
+                    <br>
+                    <br>
+                    <pre><span class="txt_azul">while</span> contador < <span class="txt_rojo">5</span>:</pre>
+                    <pre>   <span class="txt_amarillo">print</span>(<span class="txt_verde">"El contador es: "</span>, contador)</pre>
+                    <pre>   contador += <span class="txt_rojo">1</span></pre>
+                    <br>
+                    <br>
+                    <pre><span class="txt_plomo"># Estructura de control for</span></pre>
+                    <pre>frutas = [<span class="txt_verde">"manzana"</span>, <span class="txt_verde">"plátano"</span>, <span class="txt_verde">"pera"</span>]</pre>
+                    <br>
+                    <br>
+                    <pre><span class="txt_azul">for</span> fruta <span class="txt_azul">in</span> frutas:</pre>
+                    <pre>   <span class="txt_amarillo">print</span>(<span class="txt_verde">"Me gusta comer "</span>, fruta)</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="subtitulo">
+            Funciones y Módulos
+        </p>
+
+        <p class="contenido">
+            En Python, puedes definir tus propias funciones para reutilizar código. Además, puede utilizar módulos
+            preexistentes para ampliar la funcionalidad de su programa. Aquí tienes ejemplos:
+        </p>
+
+        <div class="caja_ejemplo_codigo">
+            <div class="ejemplo_codigo">
+                <code>
+                    <pre><span class="txt_plomo"># Definicion de función</span></pre>
+                    <pre><span class="txt_azul">def</span> <span class="txt_mas_rojo">saludar</span>(nombre):</pre>
+                    <pre>   <span class="txt_amarillo">print</span>(<span class="txt_verde">"¡Hola, "</span>, nombre, <span class="txt_verde">"!"</span>)</pre>
+                    <br>
+                    <br>
+                    <pre><span class="txt_plomo"># Llamada de función</span></pre>
+                    <pre>saludar(<span class="txt_verde">"Juan"</span>)</pre>
+                    <br>
+                    <br>
+                    <pre><span class="txt_plomo"># Importar un módulo y utilizar una función del mismo</span></pre>
+                    <pre><span class="txt_azul">import</span> math</pre>
+                    <br>
+                    <br>
+                    <pre>raiz_cuadrada = math.sqrts(<span class="txt_rojo">16</span>)</pre>
+                    <pre><span class="txt_amarillo">print</span>(<span class="txt_verde">"La raíz cuadrada de 16 es: "</span>, raiz_cuadrada)</pre>
+                </code>
+            </div>
+        </div>
+
+        <p class="contenido">
+            Estos son solo algunos conceptos básicos de Python para ayudarte a comenzar. A medida que continúe
+            aprendiendo, podrá explorar temas más avanzados, como estructuras de datos, manejo de archivos, programación
+            orientada a objetos, entre otros.
+        </p>
+        <p class="contenido">
+            Recuerda que puedes ejecutar el código en un entorno de desarrollo de Python para ver los resultados y
+            experimentar con él. ¡Buena suerte con tu aprendizaje de Python!
+        </p>
+    </main>
+</body>
+
+</html>
